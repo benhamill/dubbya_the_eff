@@ -1,7 +1,7 @@
 # The Test
 It looks like bundler is doing something funky with Object when doing `bundle exec rspec` compared to just `rspec`. Behold:
 
-    $ rvm info
+`$ rvm info`
 
     ruby-1.9.2-p136@dubbya_the_eff:
 
@@ -41,7 +41,7 @@ It looks like bundler is doing something funky with Object when doing `bundle ex
         gemset:       "dubbya_the_eff"
 
 
-    $ gem list
+`$ gem list`
 
     *** LOCAL GEMS ***
 
@@ -50,7 +50,7 @@ It looks like bundler is doing something funky with Object when doing `bundle ex
     rake (0.8.7)
     spoon (0.0.1)
 
-    $ bundle install
+`$ bundle install`
     Fetching source index for http://rubygems.org/
     Installing diff-lcs (1.1.2)
     Installing rspec-core (2.5.1)
@@ -60,7 +60,7 @@ It looks like bundler is doing something funky with Object when doing `bundle ex
     Using bundler (1.0.10)
     Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
 
-    $ gem list
+`$ gem list`
 
     *** LOCAL GEMS ***
 
@@ -74,7 +74,7 @@ It looks like bundler is doing something funky with Object when doing `bundle ex
     rspec-mocks (2.5.0)
     spoon (0.0.1)
 
-    $ bundle exec rspec --color example_spec.rb
+`$ bundle exec rspec --color example_spec.rb`
     [:!, :!=, :!~, :<, :<=, :<=>, :==, :===, :=~, :>, :>=, :__id__, :__send__, :allocate,
     :ancestors, :as_null_object, :autoload, :autoload?, :class, :class_eval, :class_exec,
     :class_variable_defined?, :class_variable_get, :class_variable_set, :class_variables, :clone,
@@ -111,7 +111,7 @@ It looks like bundler is doing something funky with Object when doing `bundle ex
     Finished in 0.01001 seconds
     1 example, 1 failure
 
-    $ rspec --color example_spec.rb
+`$ rspec --color example_spec.rb`
     [:!, :!=, :!~, :<, :<=, :<=>, :==, :===, :=~, :>, :>=, :__id__, :__send__, :allocate,
     :ancestors, :as_null_object, :autoload, :autoload?, :class, :class_eval, :class_exec,
     :class_variable_defined?, :class_variable_get, :class_variable_set, :class_variables, :clone,
